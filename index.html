@@ -6,47 +6,44 @@
   <title>Seamline — Terms & Conditions</title>
   <meta name="robots" content="noindex">
   <style>
-    :root{
-      --bg:#ffffff;
-      --fg:#111111;
-      --muted:#5f6368;
-      --accent:#0b57d0;
-      --card:#f6f7f9;
-      --border:#e4e6eb;
-      --max: 860px;
-    }
-    html,body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;line-height:1.65}
-    header{background:#111;color:#fff}
-    .wrap{max-width:var(--max);margin:0 auto;padding:2rem 1rem}
-    h1{margin:0 0 .25rem 0;font-size:clamp(1.6rem,2.4vw,2.2rem);line-height:1.2}
-    .muted{color:#c9c9c9;font-size:.95rem}
-    main{max-width:var(--max);margin:0 auto;padding:2rem 1rem;display:grid;grid-template-columns:1fr;gap:1.5rem}
-    @media (min-width:980px){
-      main{grid-template-columns:260px 1fr}
-      .toc{position:sticky;top:1rem;height:fit-content}
-    }
-    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1rem}
-    .toc h2{margin:.25rem 0 0 0;font-size:1rem}
-    .toc a{display:block;color:var(--fg);text-decoration:none;padding:.4rem .6rem;border-radius:8px}
-    .toc a:hover{background:#eceff3}
-    .lead{font-size:1rem;color:var(--muted)}
-    ol.terms{counter-reset:item;margin:0;padding:0;list-style:none}
-    ol.terms > li{counter-increment:item;background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:1rem 1.1rem;margin:0 0 .9rem 0}
-    ol.terms > li::before{
-      content: counter(item) ".";
-      font-weight:700;color:var(--accent);margin-right:.6rem
-    }
-    li h3{display:inline;margin:0 .25rem 0 0;font-size:1.05rem;line-height:1.3}
-    li p{margin:.5rem 0 0 1.5rem}
-    .section{scroll-margin-top:90px}
-    footer{max-width:var(--max);margin:2rem auto;padding:0 1rem 3rem;color:var(--muted);font-size:.95rem}
-    a{color:var(--accent)}
-    code{background:#f2f4f7;border:1px solid var(--border);padding:.15rem .35rem;border-radius:6px}
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; line-height: 1.6; margin: 0; }
+    header { padding: 2.5rem 1rem; background: #111; color: #fff; }
+    header .wrap { max-width: 800px; margin: 0 auto; }
+    main { max-width: 800px; padding: 2rem 1rem; margin: 0 auto; }
+    h1, h2, h3 { line-height: 1.2; }
+    code { background: #f6f7f9; padding: 0.15rem 0.35rem; border-radius: 4px; }
+    .muted { color: #666; font-size: 0.9rem; }
+    footer { max-width: 800px; margin: 2rem auto; padding: 0 1rem 3rem; color: #666; font-size: 0.9rem; }
+    a { color: inherit; text-decoration: underline; }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <h1>Seamline — Terms &amp; Conditions</h1>
-      <p class="muted">Last updated: <span id="lastUpdated">22 September 2025</span></p>
-      <p class="lead">By participating in Seamline, you agree to the legally binding terms below.
+      <h1>Terms & Conditions</h1>
+      <p class="muted">Last updated: <span id="lastUpdated">2025-09-22</span></p>
+    </div>
+  </header>
+  <main>
+    <p><strong>Quick summary (not a substitute for the full terms):</strong> By participating in Seamline, you agree to the legally binding terms below. If anything here conflicts with a separately signed agreement, that signed agreement controls.</p>
+
+    <h2>1. Photo Consent & Release</h2>
+    <p>Paste the full “storm-shelter” version we drafted here (Sections 1–20). Keep headings and numbering.</p>
+
+    <h2>2. Privacy & Data Protection</h2>
+    <p>Include the UK GDPR/Data Protection statement we added (what you collect, why, retention, contact email for requests).</p>
+
+    <h2>3. Updates to These Terms</h2>
+    <p>We may update these Terms from time to time. The current version will always be available on this page. For material changes, we’ll provide reasonable notice (e.g., in-app notice or email where available). Continued participation after changes constitutes acceptance of the updated Terms.</p>
+
+    <h2>4. Contact</h2>
+    <p>Questions about these Terms or requests for a PDF copy: <a href="mailto:legal@seamline.io">legal@seamline.io</a></p>
+  </main>
+  <footer>
+    <p>© <span id="year"></span> Seamline. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
